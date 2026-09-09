@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Shorts 上傳器</title>
+<style>
+  :root { color-scheme: light dark; }
+  body { margin:0; padding:3rem 1.25rem; font:16px/1.75 -apple-system,"Noto Sans TC",system-ui,sans-serif;
+         max-width:44rem; margin-inline:auto; }
+  h1 { font-size:1.6rem; margin:0 0 .25rem; }
+  .sub { color:#6b7280; margin:0 0 2.5rem; }
+  h2 { font-size:1.1rem; margin:2.25rem 0 .6rem; }
+  ul { padding-left:1.2rem; } li { margin:.35rem 0; }
+  code { background:rgba(127,127,127,.14); padding:.12em .4em; border-radius:4px; font-size:.9em; }
+  footer { margin-top:3rem; padding-top:1.25rem; border-top:1px solid rgba(127,127,127,.25);
+           color:#6b7280; font-size:.9rem; }
+  a { color:#2563eb; } @media (prefers-color-scheme:dark){ a{color:#7aa7ff;} }
+</style>
+</head>
+<body>
+  <h1>Shorts 上傳器</h1>
+  <p class="sub">一個給自己用的小工具，把做好的短影音自動上傳到自己的 YouTube 頻道。</p>
+
+  <h2>這是什麼</h2>
+  <p>
+    「人生實驗室」頻道的影片製作流程跑在自己的電腦上。影片做完、母帶處理完之後，
+    這個工具透過 YouTube Data API v3 把成品連同標題、描述、標籤一起上傳到頻道，
+    並且一律先設為<strong>私人</strong>，等人工確認過內容才手動改成公開。
+  </p>
+
+  <h2>它會做的事</h2>
+  <ul>
+    <li>上傳影片檔到經營者自己的 YouTube 頻道（預設私人）</li>
+    <li>帶上事先寫好的標題、描述、標籤</li>
+    <li>發一則說明來源與授權的留言</li>
+  </ul>
+
+  <h2>它不會做的事</h2>
+  <ul>
+    <li>不讀取、不蒐集任何其他使用者的資料</li>
+    <li>不對外提供服務，沒有註冊，沒有其他使用者</li>
+    <li>不把任何資料傳給第三方</li>
+  </ul>
+
+  <h2>使用範圍</h2>
+  <p>
+    這個工具只由經營者本人在本機執行，用來管理自己的頻道，
+    不開放給任何其他人使用。授權憑證（token）只存在經營者自己的電腦上。
+  </p>
+
+  <footer>
+    隱私權政策：<a href="./privacy.html">privacy.html</a><br>
+    聯絡方式：nnnmdd919@gmail.com
+  </footer>
+</body>
+</html>
